@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Sai Vallabha Linga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Sai Vallabha Linga</div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link active">Skills</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding: 60px 20px;">
+        <div class="hero-content">
+            <h1>My Skills</h1>
+            <p class="subtitle">What I know and what I can do</p>
+        </div>
+    </header>
+
+    <section class="skills-page">
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>Programming Languages</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">C</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3>Web Technologies</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">CSS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3>Tools & Platforms</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name">Git & GitHub</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">VS Code</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">React</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-section">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Program</th>
+                        <th>Duration</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vasavi College of Engineering</td>
+                        <td>B.E. Information Technology</td>
+                        <td>2024 - 2028</td>
+                        <td><strong>8.76</strong>/10</td>
+                    </tr>
+                    <tr>
+                        <td>Sri Chaitanya College</td>
+                        <td>Intermediate (MPC)</td>
+                        <td>2022 - 2024</td>
+                        <td><strong>97.8%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>St. Francis De Sales</td>
+                        <td>High School</td>
+                        <td>2020 - 2022</td>
+                        <td><strong>9.8</strong>/10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Certifications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Organisation / Platform</th>
+                        <th>Course</th>
+                        <th>Certificate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cisco Networking Academy</td>
+                        <td>Python Essentials 1</td>
+                        <td><a href="python.pdf">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>NPTEL</td>
+                        <td>DSA Using Python</td>
+                        <td><a href="nptel.pdf">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sai Vallabha Linga. All rights reserved.</p>
+    </footer>
+
+    <style>
+        .skills-page {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .skill-box {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--border-color) 100%);
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 3px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+        }
+
+        .skill-box h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .skill-item:last-child {
+            border-bottom: none;
+        }
+
+        .skill-name {
+            color: #eaeaea;
+            font-weight: 500;
+        }
+
+        .skill-level {
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .skill-level.advanced {
+            background: rgba(240, 147, 251, 0.2);
+            color: var(--accent-color);
+        }
+
+        .skill-level.intermediate {
+            background: rgba(102, 126, 234, 0.2);
+            color: var(--primary-color);
+        }
+
+        .education-section {
+            margin-top: 60px;
+        }
+
+        .education-section h2 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
